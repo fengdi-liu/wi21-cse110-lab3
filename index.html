@@ -132,15 +132,18 @@
             <label><input type="radio" name="radio"> CSE141 </label>
             <label><input type="radio" name="radio"> EDS124 </label>
           </fieldset>
-
-
-
-        </form>
-
-
-     
+        </form> 
       </div>
       <br>
+
+      <form action="page.html" method="post">
+        <label>Course: <input type="text" name="course" dirname="course.dir" value="CSE110"></label>
+        <input type="submit"/>
+      </form>
+      <!-- page.html?course=CSE110&course.dir=ltr -->
+
+
+
     </form>      
     
     <input type="image" id="image" width="100" height="55" alt="submit"
@@ -177,8 +180,8 @@
       <button>Send</button>
       </form>
       
-      <p><b> Or you can upload a file: </b></p>
-      <label for="avatar">Choose a file:</label>
+      <p><b> Please upload a profile picture: </b></p>
+      <label for="avatar">Choose a profile picture:</label>
             <input type="file"
        id="avatar" name="avatar"
        accept="image/png, image/jpeg">
