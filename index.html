@@ -43,10 +43,7 @@
       <li> Introduce to Computer Architecture </li>
     </ol>
 
-    <h3> Nice to know you! </h3>
-
-
-    <p> This is my schedule of this quatar </p>  
+    <p> <b>This is my schedule of this quatar </b></p>  
 
     <table>
       <thead>
@@ -91,7 +88,7 @@
       </table>
 
 
-    <p>If you want to study together, Please leave Your information, and courses </p>  
+    <p><b> If you want to study together, Please leave Your information, and courses </b></p>  
     <form action="process.php" mehtod="POST">
    
       <div>
@@ -113,8 +110,24 @@
       <br>
 
       <div>
-        <label for="courses">Course :</label>
-        <input type="course" id="course name" name="course name">
+        <label for="age">Age :</label>
+        <input type="number" id="age" name="age">
+      </div>
+      <br>
+
+      <div>
+        <label for="graduate">Time expected to Granduate:</label>
+        <input type="date" id="graduate" name="graduate">
+      </div>
+      <br>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select name ="gender">
+          <option value="male">Male</option>
+          <option value="female">Feale</option>
+          <option value="other">Other</option>
+        </select>          
       </div>
       <br>
 
@@ -123,19 +136,9 @@
         <input type="course" id="course name" name="course name">
       </div>
       <br>
-
-      <div>
-        <label for="courses">Course :</label>
-        <input type="course" id="course name" name="course name">
-      </div>
-      <br>
-
-      <div>
-        <label for="courses">Course :</label>
-        <input type="course" id="course name" name="course name">
-      </div>
-      <br>
-    </form>        
+    </form>      
+    
+    <button>Send</button>
 
 
     <table>
