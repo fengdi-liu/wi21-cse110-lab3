@@ -62,10 +62,41 @@ p {
 }
 
 body {
-  background-color: lightblue;
+  background-color: rgb(204, 240, 252);
 }
 
- 
+p.outset {border-style: outset;}
+
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.five {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.six {
+  border-style: double;
+  border-width: thick;
+}
+
   </style>
 
 </head>
@@ -73,7 +104,7 @@ body {
 
     <header>
        <h1 style="border:2px solid Tomato;"> Welcome to Fengdi's Page </h1> 
-       <p >This page is created in CSE110 Lab</p>
+       <p class="outset">This page is created in CSE110 Lab</p>
        <p style="background-color: bisque;"> How Do you like it?</p>
     </header>
 
@@ -83,7 +114,7 @@ body {
 
 
     <p class="center">
-    <h2>Who Am I? </h2>
+    <p class="six"><h2>Who Am I? </h2></p>
    </p>
 
    <p class="center">
