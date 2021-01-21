@@ -260,6 +260,18 @@ h1 {
   font-size: 30px;
 }
 
+.itemposition1{
+  align-self: center;
+}
+
+.itemposition2{
+  align-self: start;
+}
+
+.itemposition3{
+  align-self: end;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -544,11 +556,11 @@ body {
 
       <p>My phone number:</p>
       <div class="flex-container">
-        <div>4</div>
-        <div>2</div>
+        <div class="itemposition3">4</div>
+        <div class="itemposition1">2</div>
         <div>5</div>  
-        <div>0</div>
-        <div style="flex-shrink: 4">2</div>
+        <div class="itemposition2">0</div>
+        <div style="flex-grow: 0.5">2</div>
         <div style="flex-grow: 1">4</div>  
         <div style="flex-grow: 2">7</div>
         <div style="flex-grow: 3">8</div>
