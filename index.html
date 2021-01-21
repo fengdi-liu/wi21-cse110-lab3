@@ -54,6 +54,13 @@ div:hover {
   background-color: rgb(245, 245, 191);
 }
 
+div.maxWidth{
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #062f6b;
+}
+
+
 h1, h2, p {
   text-align: center;
   color: rgb(80, 2, 2);
@@ -271,8 +278,8 @@ h1 {
    <h2 style =color:green> This is my schedule of this quatar: </h2>
    
     <p class="outset center">
-    <table class= "center longmargin">
-      <thead>
+    <table class= "longmargin">
+      <thead class="center">
         <tr>
             <th> Course </th>
             <th> Lecture Time </th>
@@ -336,7 +343,7 @@ h1 {
       </div>
       <br>
 
-      <div>
+      <div class="maxWidth">
         <label for="age">Age :</label>
         <input type="number" id="age" name="age" placeholder="Your Age">
       </div>
