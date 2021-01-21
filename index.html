@@ -247,6 +247,7 @@ h1 {
 
 .flex-container {
   display: flex;
+  align-items: stretch;
   background-color: rgb(40, 5, 87);
 }
 
@@ -259,16 +260,16 @@ h1 {
   font-size: 30px;
 }
 
-.item1{
-  flex-shrink: 3;
+.itemposition1{
+  align-self: center;
 }
 
-.item2{
-  flex-flow: row wrap;
+.itemposition2{
+  align-self: start;
 }
 
-.item3{
-  flex-grow: 2;
+.itemposition2{
+  align-self: end;
 }
 
 * {
@@ -554,12 +555,12 @@ body {
       </table>
 
       <p>My phone number:</p>
-      <div >
-        <div class="item3">4</div>
-        <div class="item2">2</div>
-        <div>5</div>  
-        <div class="item1">0</div>
+      <div class="flex-container">
+        <div>4</div>
         <div>2</div>
+        <div>5</div>  
+        <div>0</div>
+        <div style="flex-grow: 1">2</div>
         <div style="flex-grow: 1">4</div>  
         <div style="flex-grow: 2">7</div>
         <div style="flex-grow: 3">8</div>
