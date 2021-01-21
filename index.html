@@ -247,7 +247,7 @@ h1 {
 
 .flex-container {
   display: flex;
-  flex-wrap: nowrap;
+  align-items: stretch;
   background-color: rgb(40, 5, 87);
 }
 
@@ -350,7 +350,7 @@ body {
       <img src="pexels-photo-417074.jpeg" style="width:40%">
     </div>
     <div class="column">
-      <img src="turkey-3048299_1920-1366x550.jpg" style="width:45%">
+      <img src="turkey-3048299_1920-1366x550.jpg" style="width:50%">
     </div>
    </div>
 
@@ -546,11 +546,11 @@ body {
         <div>4</div>
         <div>2</div>
         <div>5</div>  
-        <div>0</div>
-        <div>2</div>
-        <div>4</div>  
-        <div>7</div>
-        <div>8</div>
+        <div style="flex-wrap: wrap">0</div>
+        <div style="flex-shrink: 2">2</div>
+        <div style="flex-grow: 1">4</div>  
+        <div style="flex-grow: 2">7</div>
+        <div style="flex-grow: 3">8</div>
       </div>
 
 
