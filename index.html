@@ -156,7 +156,7 @@ h1 {
   font-size: 10vmin;
 }
 
-.individualmargin {
+.longmargin {
   border: 1px solid black;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -168,6 +168,11 @@ h1 {
   border: 1px solid black;
   margin: 25px 50px 75px 100px;
   background-color: lightblue;
+}
+.automargin {
+  width:300px;
+  margin: auto;
+  border: 1px solid rgb(115, 160, 168);
 }
 
 
@@ -199,7 +204,7 @@ h1 {
           
     </p>
 
-    <div class="individualmargin">
+    <div class="longmargin">
     <section><p class="center">
        <b> I really love this word from Steve Jobs. </b>
       <blockquote>
@@ -282,7 +287,7 @@ h1 {
       </div>
       <br>  
 
-      <div>
+      <div class="automargin">
         <label for="email">Email Address: (required *)</label>
         <input type="email" id="email"  pattern=".+@globex.com" size="30" required>   
       </div>
