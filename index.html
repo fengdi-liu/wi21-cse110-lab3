@@ -156,13 +156,18 @@ h1 {
   font-size: 10vmin;
 }
 
-.shortmargin {
+.individualmargin {
   border: 1px solid black;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
   background-color: rgb(133, 173, 187);
+}
+.shorthandmargin {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
 }
 
 
@@ -194,7 +199,7 @@ h1 {
           
     </p>
 
-    <div class="shortmargin">
+    <div class="individualmargin">
     <section><p class="center">
        <b> I really love this word from Steve Jobs. </b>
       <blockquote>
@@ -271,7 +276,7 @@ h1 {
       </div>
       <br>
 
-      <div>
+      <div class="shorthandmargin">
         <label for="lastname">Last Name : (required *)</label>
         <input type="text" id="lastname" name="lastname" placeholder="Last Name">
       </div>
