@@ -305,6 +305,21 @@ body {
   }
 }
 
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #1d2375;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(139, 163, 214, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 
   </style>
 </head>
@@ -380,7 +395,24 @@ body {
    <p class="round3">Are you ready?</p>
    <h2 style =color:green> This is my schedule of this quatar: </h2>
    
-    <p class="outset center">
+
+
+      <div class="grid-container">
+        <div class="grid-item">Course</div>
+        <div class="grid-item">Lecture Time</div>
+        <div class="grid-item">Professor</div>  
+        <div class="grid-item">CSE 101</div>
+        <div class="grid-item">Tue, Thur</div>
+        <div class="grid-item">Miles</div>  
+        <div class="grid-item">CSE 110</div>
+        <div class="grid-item">Mon, Wed, Fri</div>
+        <div class="grid-item">Powell</div>  
+        <div class="grid-item">CSE 141</div>
+        <div class="grid-item">Tue Thur</div>
+        <div class="grid-item">Chin</div>  
+      </div>
+
+
     <table>
       <thead>
         <tr>
@@ -421,7 +453,7 @@ body {
          </tr>  
       </tbody>  
       </table>
-    </p>
+    
 
 
     <p class="test1">If you want to study together, Please leave Your information, and courses </p>  
