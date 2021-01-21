@@ -245,6 +245,20 @@ h1 {
   border: 2px solid #89d48c;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(40, 5, 87);
+}
+
+.flex-container > div {
+  background-color: #c99343;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
 
   </style>
 </head>
@@ -448,22 +462,29 @@ h1 {
         <tr>
             <th> Name </th>
             <th> Email </th>
-            <th> Phone </th>
 
         </tr>  
       </thead>
-
       <tbody>
         <tr>
           <td> Fengdi Liu </td>
           <td> f3liu@ucsd.edu </td>
-          <td> 425-123-1234 </td>
-
       </tr>  
-
       </tbody>  
-
       </table>
+
+      <p>My phone number:</p>
+      <div class="flex-container">
+        <div>4</div>
+        <div>2</div>
+        <div>5</div>  
+        <div>0</div>
+        <div>2</div>
+        <div>4</div>  
+        <div>7</div>
+        <div>8</div>
+      </div>
+
 
       <p><b> Leave a message to me: </b></p>
       <form action="process.php" method="POST">
