@@ -245,33 +245,6 @@ h1 {
   border: 2px solid #89d48c;
 }
 
-.flex-container {
-  display: flex;
-  align-items: stretch;
-  background-color: rgb(40, 5, 87);
-}
-
-.flex-container > div {
-  background-color: #c99343;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-
-.itemposition1{
-  align-self: center;
-}
-
-.itemposition2{
-  align-self: start;
-}
-
-.itemposition2{
-  align-self: end;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -345,6 +318,31 @@ body {
 .item11 {
   grid-column: 2 / 4;
 }
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap:wrap;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items:flex-start stretch;
+  align-content: space-around;
+
+  background-color: rgb(40, 5, 87);
+}
+
+.flex-container > div {
+  background-color: #c99343;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
   </style>
 </head>
 
@@ -559,8 +557,8 @@ body {
         <div>4</div>
         <div>2</div>
         <div>5</div>  
-        <div>0</div>
-        <div style="flex-grow: 1">2</div>
+        <div style="flex-basis: 2">0</div>
+        <div style="flex-shrink: 2">2</div>
         <div style="flex-grow: 1">4</div>  
         <div style="flex-grow: 2">7</div>
         <div style="flex-grow: 3">8</div>
