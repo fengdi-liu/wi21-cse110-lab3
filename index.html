@@ -224,6 +224,20 @@ h1 {
 .displayblock {
   display: block;
 }
+.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #12045e;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #89d48c;
+}
 
   </style>
 </head>
@@ -233,7 +247,7 @@ h1 {
 
     <header>
        <h1 class="myheadstyle"> Welcome to Fengdi's Page </h1> 
-       <p class="outset lucidafont">This page is created in CSE110 Lab</p>
+       <p class="outset lucidafont sticky">This page is created in CSE110 Lab</p>
        <p style="background-color: bisque;"> How Do you like it?</p>
     </header>
 
@@ -349,7 +363,7 @@ h1 {
       </div>
       <br>
 
-      <div>
+      <div class="relative">
         <label for="graduate">Time expected to Granduate:</label>
         <input type="month" id="graduate" name="graduate">
       </div>
