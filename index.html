@@ -340,10 +340,18 @@ body {
   line-height: 75px;
   font-size: 30px;
 }
-.item1{
-    flex-grow:1;
+.itemgrow2{
+    flex-grow:2;
 }
-
+.itemgrow3{
+    flex-grow:3;
+}
+.itemshrink2{
+    flex-shrink:2;
+}
+.itembasis{
+    flex-basis:50%;
+}
 
 
   </style>
@@ -560,11 +568,11 @@ body {
         <div>4</div>
         <div>2</div>
         <div>5</div>  
-        <div >0</div>
-        <div >2</div>
-        <div >4</div>  
-        <div >7</div>
-        <div class="item1">8</div>
+        <div class="itemgrow2">0</div>
+        <div class="itemgrow3">2</div>
+        <div class="itemshrink2">4</div>  
+        <div class="itembasis">7</div>
+        <div class="itemgrow2">8</div>
       </div>
 
 
