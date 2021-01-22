@@ -326,7 +326,7 @@ body {
   flex-direction: row;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items:flex-start stretch;
+  align-items:stretch;
   align-content: space-around;
 
   background-color: rgb(40, 5, 87);
@@ -347,10 +347,10 @@ body {
     flex-grow:2;
 }
 .itemshrink2{
-    flex-shrink:4;
+    flex-shrink:3;
 }
 .itembasis{
-    flex-basis:20%;
+    flex-basis:3%;
 }
 
 
@@ -566,7 +566,7 @@ body {
       <p>My phone number:</p>
       <section class="flex-container">
         <div>4</div>
-        <div>2</div>
+        <div class="itemshrink2">2</div>
         <div>5</div>  
         <div class="itemgrow2">0</div>
         <div class="itemgrow3">2</div>
