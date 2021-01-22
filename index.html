@@ -1,17 +1,369 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <title>Fengdi's Page </title>
     <meta charset="UTF-8">
     <meta name="description" content="Fengdi's page">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Fengdi Liu">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    
+    <link rel="stylesheet" href="style.css">
+
+  <style>
+    .test1{
+  border: 2px solid black;
+  outline: #355e9b solid 20px;
+  margin: auto;  
+  padding: 30px;
+  text-align: center;
+}
+  
+   * {
+    text-align: center;
+    color: blue;
+  }
+
+  .center{
+    text-align: center;
+    color: rgb(53, 51, 51)
+  }
+
+  .header .h1 {
+    text-align: center;
+    color: rgb(92, 4, 4);
+  }
+  
+  p {
+  text-align: center;
+  color: rgb(5, 75, 5);
+} 
+  
+a[target] {
+  background-color: pink;
+}
+
+div {
+  background-color: whitesmoke;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: rgb(245, 245, 191);
+}
+
+p:active,h1:active,a:active{
+  color:rgb(211, 174, 131);
+}
+.maxWidth{
+  max-width: 90%;
+  margin: auto;
+  border: 5px solid #062f6b;
+}
+
+
+h1, h2, p {
+  text-align: center;
+  color: rgb(80, 2, 2);
+}
+
+div > p {
+  background-color: rgb(207, 207, 172);
+  text-align: center;
+}
+
+p {
+  color: red;
+}
+
+body {
+  background-color: rgb(204, 240, 252);
+}
+
+p.outset {border-style: outset;}
+
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.five {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.six {
+  border-style: double;
+  border-width: thick;
+}
+
+h1 {font-size: 15mm;}
+h2 {font-size: 10mm;}
+p {
+  font-size: 0.5cm;
+  line-height: 1cm;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2em;
+}
+
+div {
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+span {
+  font-size: 0.5em;
+}
+
+p.normal {
+  border: 2px solid rgb(9, 56, 9);
+}
+
+p.round1 {
+  border: 2px solid rgb(9, 56, 9);
+  border-radius: 5px;
+}
+
+p.round2 {
+  border: 2px solid rgb(9, 56, 9);
+  border-radius: 8px;
+}
+
+p.round3 {
+  border: 2px solid rgb(9, 56, 9);
+  border-radius: 12px;
+}
+body {
+ font-size:16px;
+}
+
+div {
+  font-size: 150%;
+  border: 1px solid #000000;
+}
+
+h1 {
+  font-size: 10vmin;
+}
+
+.longmargin {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: rgb(133, 173, 187);
+}
+.shorthandmargin {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color:#add8e6;
+}
+.automargin {
+  width:300px;
+  margin: auto;
+  border: 1px solid rgb(115, 160, 168);
+}
+
+.longpadding {
+  border: 1px solid #000000;
+  background-color:hsl(195, 53%, 79%);;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.shortpadding {
+  border: 1px solid black;
+  padding: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+
+.heightwidth {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+
+
+.lucidafont{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.satisyfont{
+  font-family: 'Brush Script MT', cursive;
+}
+
+.myheadstyle{
+  border:2px solid Tomato;
+}
+.myfontstyle{
+  font-family: 'MyFairFont';
+}
+
+.inline {
+  display: inline;
+}
+.displayblock {
+  display: block;
+}
+.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #12045e;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  color:rgb(5, 75, 5);
+  text-align: center;
+  text-decoration:underline;
+  border: 2px solid #89d48c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  background-color: #1d2375;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(139, 163, 214, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item2 {
+  grid-column: 2 / 4;
+}
+.item5 {
+  grid-column: 2 / 4;
+}
+.item8 {
+  grid-column: 2 / 4;
+}
+.item11 {
+  grid-column: 2 / 4;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap:wrap;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items:stretch;
+  align-content: space-around;
+
+  background-color: rgb(40, 5, 87);
+}
+
+.flex-container > div {
+  background-color: #c99343;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.itemgrow2{
+    flex-grow:1;
+}
+.itemgrow3{
+    flex-grow:2;
+}
+.itemshrink2{
+    flex-shrink:3;
+}
+.itembasis{
+    flex-basis:3%;
+}
+
+
+   </style>
+</head>
+
 
   <body>
+      <div class="sticky"> Thanks for visiting!</div>
     <header>
-        <h1> Welcome to Fengdi's Page </h1>
+       <h1 class="myheadstyle"> Welcome to Fengdi's Page </h1> 
+       <p class="outset + lucidafont">This page is created in CSE110 Lab</p>
+       <p style="background-color: bisque;"> How Do you like it?</p>
     </header>
 
     <a href = "example.jpg">
@@ -19,73 +371,84 @@
     </a>  
 
 
-    <h2> Who Am I? </h2>
-    <p> 
+    <p class="center satisyfont">
+     <h2>Who Am I? </h2>
+   </p>
+
+   <p class="center">
           My name is <b>Fengdi</b>, I am a cs major studnet in UCSD. I moved from New Jersey two year ago, 
           and I really love San Diego! I love hiking, tennis, and cooking. You can find me here:
-          <a href= "https://www.linkedin.com/in/fengdi-liu-ba380093/" target= "_blank"> Linkedin </a>
+          <a href= "https://www.linkedin.com/in/fengdi-liu-ba380093/" target= "_blank">Linkedin.com</a>
           
     </p>
+   <div class="header">
+     <h2>I want to share some nature pictures with you!</h2>
+   </div>
+   
+   <div class="row"> 
+    <div class="column">
+      <img src="960x0.jpg" style="width:25%"> 
+    </div>
 
-    <p> <b> I really love this word from Steve Jobs. </b></p>
+    <div class="column">
+      <img src="nature-photography.jpg" style="width:40%">   
+    </div> 
+
+    <div class="column">
+      <img src="pexels-photo-417074.jpeg" style="width:40%">
+    </div>
+    <div class="column">
+      <img src="turkey-3048299_1920-1366x550.jpg" style="width:50%">
+    </div>
+   </div>
+
+
+
+    <div class="longmargin~heightwidth~center">
+    <section><p class="center">
+       <b> I really love this word from Steve Jobs. </b>
       <blockquote>
         <i>“Your time is limited, so don’t waste it living someone else’s life.</i>
         Don’t be trapped by dogma – which is living with the results of other people’s thinking.”
       </blockquote>
+    </p></section>
+    </div>
 
     <h3 style =color:green> These are the courses I am taking this quatar: </h3>
-    <ul>
-          <li> Software Engineering </li>
-          <li> Design and Analysis of Algorithms </li>
-          <li> Introduce to Computer Architecture </li>
+    <div>
+      <p class="six"> Which one is your favorite?</p>
+    <ul>  
+          <li class="block"> Software Engineering </li>
+          <li class="block"> Design and Analysis of Algorithms </li>
+          <li class="inline block"> Introduce to Computer Architecture </li>
+          <li class="inline block"> & EDS 124AR</li>
     </ul>
+    </div>
 
-    <h2 style =color:green> This is my schedule of this quatar: </h2>
+   <p class="round3">Are you ready?</p>
+   <h2 style =color:green> This is my schedule of this quatar: </h2>
    
-    <table>
-      <thead>
-        <tr>
-            <th> Course </th>
-            <th> Lecture Time </th>
-            <th> Professor </th>
-
-        </tr>  
-      </thead>
-
-      <tbody>
-        <tr>
-          <td> CSE 101 </td>
-          <td> Tue, Thur </td>
-          <td> Miles </td>
-         </tr>  
-      </tbody>  
-      
-      <tbody>
-        <tr>
-          <td> CSE 110 </td>
-          <td> Mon, Wed, Fri </td>
-          <td> Powell  </td>
-         </tr>  
-      </tbody>  
-      <tbody>
-        <tr>
-          <td> CSE 141 </td>
-          <td> Tue, Thur </td>
-          <td> Chin  </td>
-         </tr>  
-      </tbody>  
-      <tbody>
-        <tr>
-          <td> EDS 124 </td>
-          <td> Online </td>
-          <td> Enguchi  </td>
-         </tr>  
-      </tbody>  
-
-      </table>
 
 
-    <p><b> If you want to study together, Please leave Your information, and courses </b></p>  
+      <div class="grid-container">
+        <div class="item1">Course</div>
+        <div class="item2">Lecture Time</div>
+        <div class="item3">Professor</div>  
+        <div class="item4">CSE 101</div>
+        <div class="item5">Tue, Thur</div>
+        <div class="item6">Miles</div>  
+        <div class="item7">CSE 110</div>
+        <div class="item8">Mon, Wed, Fri</div>
+        <div class="item9">Powell</div>  
+        <div class="item10">CSE 141</div>
+        <div class="item11">Tue Thur</div>
+        <div class="item12">Chin</div>  
+      </div>
+
+
+    <p class="test1">If you want to study together, Please leave Your information, and courses </p>  
+    
+     <div></div>
 
       <div class="group">
           <label for="firstname">First Name : (required *)</label>
@@ -93,25 +456,25 @@
       </div>
       <br>
 
-      <div>
+      <div class="shorthandmargin > shortpadding">
         <label for="lastname">Last Name : (required *)</label>
         <input type="text" id="lastname" name="lastname" placeholder="Last Name">
       </div>
       <br>  
 
-      <div>
+      <div class="automargin">
         <label for="email">Email Address: (required *)</label>
         <input type="email" id="email"  pattern=".+@globex.com" size="30" required>   
       </div>
       <br>
 
-      <div>
+      <div class="maxWidth center">
         <label for="age">Age :</label>
         <input type="number" id="age" name="age" placeholder="Your Age">
       </div>
       <br>
 
-      <div>
+      <div class="relative">
         <label for="graduate">Time expected to Granduate:</label>
         <input type="month" id="graduate" name="graduate">
       </div>
@@ -189,22 +552,29 @@
         <tr>
             <th> Name </th>
             <th> Email </th>
-            <th> Phone </th>
 
         </tr>  
       </thead>
-
       <tbody>
         <tr>
           <td> Fengdi Liu </td>
           <td> f3liu@ucsd.edu </td>
-          <td> 425-123-1234 </td>
-
       </tr>  
-
       </tbody>  
-
       </table>
+
+      <p>My phone number:</p>
+      <section class="flex-container">
+        <div>4</div>
+        <div class="itemshrink2">2</div>
+        <div>5</div>  
+        <div class="itemgrow2">0</div>
+        <div class="itemgrow3">2</div>
+        <div class="itemshrink2">4</div>  
+        <div class="itembasis">7</div>
+        <div class="itemgrow2">8</div>
+      </section>
+
 
       <p><b> Leave a message to me: </b></p>
       <form action="process.php" method="POST">
