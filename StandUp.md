@@ -1,4 +1,4 @@
-# Goals
+## Goals
 
 * Healthy working enviroment.
 * Make the code clean and correct.
@@ -16,18 +16,18 @@
 * review code
 * weekly planning
 
-# Weekly Monday template
+## Weekly Monday template
 Here is the template template to fill out each Monday
 
-# Current
+## Current
 
 * current high level
 * team goals
 
-# Symbol Key
+## Symbol Key
 see template below, a key for notes
 
-# Standup
+## Standup
 
 ### Monday, Jan 25th
 
@@ -40,7 +40,7 @@ see template below, a key for notes
 ### Friday, Jan 29th
 
 
-# Links & History
+## Links & History
 * Any team member can use Slack to answer these questions and find what other people say: [Slack] (https://www.cse110w21grou-lx46544.slack.com/ssb/redirect?entry_point=homepage_nav/) and all previous record are saved there!
 
 
